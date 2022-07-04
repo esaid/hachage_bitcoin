@@ -5,6 +5,8 @@ https://www.youtube.com/results?search_query=python+au+lycee+bitcoin
 
 les fichiers graphiz preuve de travail permettent d expliquer visuellement les etapes 
 
+# explication
+
 la preuve intiale [0,0,0,0,0,0]  et la transaction "Abel +35" est convertit [0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53] 
 
 on definit une liste =  preuve intiale [0,0,0,0,0,0] + la transaction soit [0,0,0,0,0,0,0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53] 
