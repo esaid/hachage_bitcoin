@@ -1,0 +1,81 @@
+True
+[98, 95, 86, 55, 66, 75]
+[18, 74, 4, 42, 77, 42]
+[13, 2, 4, 6, 8, 0]
+[109, 111, 110, 32, 109]
+
+ message de longueur multiple de 6  : 
+True
+resultat du hachage : 
+[77, 91, 5, 91, 89, 99]
+verification preuve < Max , Max=  [0, 0, 7]
+
+ message de longueur multiple de 6  : 
+True
+resultat du hachage : 
+[0, 0, 5, 47, 44, 71]
+verification preuve < Max
+Objectif atteint ?  True
+
+ message de longueur multiple de 6  : 
+True
+resultat du hachage : 
+[0, 0, 3, 12, 58, 92]
+verification preuve < Max
+Objectif atteint ?  True
+
+ message de longueur multiple de 6  : 
+True
+resultat du hachage : 
+[0, 0, 8, 28, 6, 60]
+verification preuve < Max
+Objectif atteint ?  False
+********** trouver  preuve **************
+ trouver la preuve pour le message [0, 1, 2, 3, 4, 5]  avec l objectif  MAx [0, 0, 7]  
+temps : 9.757107000000001 s
+[0, 1, 2, 3, 4, 5] [10, 33, 24, 4, 61, 99] [0, 0, 7]
+ resultat de la preuve [10, 33, 24, 4, 61, 99]
+test preuve [10, 33, 24, 4, 61, 99] pour le message [0, 1, 2, 3, 4, 5] , et l objectif Max [0, 0, 7]  Objectif atteint ?  True
+ le hachage est  [0, 0, 7, 1, 98, 9]  avec la preuve [10, 33, 24, 4, 61, 99]
+********** test preuve **************
+test preuve [12, 3, 24, 72, 47, 77] pour le message [0, 1, 2, 3, 4, 5] , et l objectif Max [0, 0, 7]  Objectif atteint ?  True
+ le hachage est  [0, 0, 5, 47, 44, 71]  avec la preuve [12, 3, 24, 72, 47, 77]
+********** test preuve **************
+test preuve [12, 13, 24, 72, 47, 77] pour le message [0, 1, 2, 3, 4, 5] , et l objectif Max [0, 0, 7]  Objectif atteint ?  False
+ le hachage est  [50, 50, 75, 37, 34, 11]  avec la preuve [12, 13, 24, 72, 47, 77]
+ test phrase vers liste  : Vive moi !
+[0, 0, 86, 5, 18, 1, 32, 9, 11, 5, 32, 33]
+Max = [0, 0, 7] 
+transaction 1 
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35']
+minage ...
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [62, 31, 31, 90, 17, 89]]
+Verification Livre :
+ le hachage est  [0, 0, 5, 5, 17, 71]  avec la preuve [62, 31, 31, 90, 17, 89]
+True
+transaction 2
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [62, 31, 31, 90, 17, 89], 'Bob -77']
+minage ...
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [62, 31, 31, 90, 17, 89], 'Bob -77', [4, 40, 50, 13, 0, 44]]
+Verification Livre :
+ le hachage est  [0, 0, 2, 81, 58, 66]  avec la preuve [4, 40, 50, 13, 0, 44]
+True
+transaction 3
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [62, 31, 31, 90, 17, 89], 'Bob -77', [4, 40, 50, 13, 0, 44], 'Camille -25']
+minage ...
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [62, 31, 31, 90, 17, 89], 'Bob -77', [4, 40, 50, 13, 0, 44], 'Camille -25', [90, 87, 66, 57, 43, 97]]
+Verification Livre :
+ le hachage est  [0, 0, 4, 19, 65, 42]  avec la preuve [90, 87, 66, 57, 43, 97]
+True
+Exemples du cours
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7]]
+ le hachage est  [0, 0, 1, 20, 17, 23]  avec la preuve [71, 15, 6, 8, 29, 7]
+True
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7], 'Bob -77', [50, 11, 6, 22, 78, 93]]
+ le hachage est  [0, 0, 1, 15, 64, 60]  avec la preuve [50, 11, 6, 22, 78, 93]
+True
+Le livre : [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7], 'Bob -77', [50, 11, 6, 22, 78, 93], 'Camille -25', [38, 2, 30, 15, 18, 81]]
+ le hachage est  [0, 0, 3, 37, 23, 71]  avec la preuve [38, 2, 30, 15, 18, 81]
+True
+
+Process finished with exit code 0
