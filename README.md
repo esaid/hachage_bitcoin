@@ -17,7 +17,7 @@ on fait le hachage de [0,0,0,0,0,0,0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53 , 1
 
 si le resultat est <= Max [0,0,7] , pour les 3 premiers elements du hachage alors la preuve de travail est trouvee
 
-exemple du cours 
+# exemple du cours 
 
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7]]
 
@@ -46,29 +46,53 @@ la verification est  True
 
 # mon exemple 
 Max = [0, 0, 7] 
+
 transaction 1 
- test phrase vers liste  :  Abel + 35
+
+test phrase vers liste  :  Abel + 35
+
 [0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53]
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35']
+
 minage ...
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [31, 16, 63, 86, 10, 90]]
+
 Verification Livre :
- le hachage est  [0, 0, 4, 58, 98, 90]  avec la preuve [31, 16, 63, 86, 10, 90]
+
+le hachage est  [0, 0, 4, 58, 98, 90]  avec la preuve [31, 16, 63, 86, 10, 90]
+
 True
+
 transaction 2
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [31, 16, 63, 86, 10, 90], 'Bob -77']
+
 minage ...
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [31, 16, 63, 86, 10, 90], 'Bob -77', [1, 65, 74, 99, 35, 87]]
+
 Verification Livre :
- le hachage est  [0, 0, 2, 47, 0, 94]  avec la preuve [1, 65, 74, 99, 35, 87]
+
+le hachage est  [0, 0, 2, 47, 0, 94]  avec la preuve [1, 65, 74, 99, 35, 87]
+
 True
+
 transaction 3
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [31, 16, 63, 86, 10, 90], 'Bob -77', [1, 65, 74, 99, 35, 87], 'Camille -25']
+
 minage ...
+
 Le livre : [[0, 0, 0, 0, 0, 0], 'Abel + 35', [31, 16, 63, 86, 10, 90], 'Bob -77', [1, 65, 74, 99, 35, 87], 'Camille -25', [61, 0, 51, 95, 4, 71]]
+
 Verification Livre :
- le hachage est  [0, 0, 3, 70, 78, 38]  avec la preuve [61, 0, 51, 95, 4, 71]
+
+le hachage est  [0, 0, 3, 70, 78, 38]  avec la preuve [61, 0, 51, 95, 4, 71]
+
 True
+
 
 
 
