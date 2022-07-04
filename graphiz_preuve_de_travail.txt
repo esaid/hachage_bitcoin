@@ -1,0 +1,57 @@
+strict digraph "Hachage Preuve de Travail et Transaction" {
+	compound=true
+	node [shape=Mrecord "strict"=true]
+	fontsize = 40
+	
+	label="Hachage Preuve de Travail et Transaction" 
+	labelloc=t
+	
+	subgraph cluster_preuve_ini {
+	    fontsize = 20
+		label="Preuve Initiale ₿  "
+		P1 [label=Preuve_antecedent color=green style=filled]
+		subgraph cluster_preuve_ini1 {
+			color=blue label="LIVRE"
+			"[0,0,0,0,0,0]"
+			
+		}
+	}
+	
+	
+	subgraph cluster_transaction1 {
+	    fontsize = 20
+		label="Transaction 1 ₿  "
+		T1 [label=Transaction1 color=green style=filled]
+		subgraph cluster_transaction1_1 {
+			color=blue label="LIVRE"
+			"Abel +25" -> "[0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53]" 
+			
+			
+		}
+	}
+	
+	
+	
+	
+	subgraph cluster_preuve1 {
+	    fontsize = 20
+		label="Preuve 1 ₿  "
+		PT1 [label=Preuve_Travail color=green style=filled]
+		subgraph cluster_preuve_ini1 {
+			color=blue label="LIVRE"
+			"[ 71, 15, 6, 8, 29, 7 ]" [color = red]
+			" Abel +25"
+			" [0,0,0,0,0,0] "
+		
+			
+			
+		}
+	}
+	
+    T1 -> PT1 [color=red]
+    P1 -> PT1 [color=red]
+    PT1 -> "[ 71, 15, 6, 8, 29, 7 ]" [color=red taillabel=" hachage de (la preuve antecedent + transaction) "]
+    
+   "Max =[0,0,7]" -> "[ 71, 15, 6, 8, 29, 7 ]" 
+    
+}
