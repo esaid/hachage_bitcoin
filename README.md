@@ -9,7 +9,7 @@ la preuve intiale [0,0,0,0,0,0]  et la transaction "Abel +35" est convertit [0, 
 
 on definit une liste =  preuve intiale [0,0,0,0,0,0] + la transaction soit [0,0,0,0,0,0,0, 0, 0, 65, 98, 1, 8, 32, 43, 32, 51, 53] 
 
-et on calcule une preuve de travail de cette liste , tel que cette preuve soit <= Max [0,0,7]
+et on calcul une preuve de travail de cette liste , tel que cette preuve soit <= Max [0,0,7]
 
 c est a dire , on prend au hasard une preuve de travail [1,2,3,4,5,6] 
 
