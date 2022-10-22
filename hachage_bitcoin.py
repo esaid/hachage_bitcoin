@@ -5,6 +5,7 @@ import math
 import random
 import time
 
+
 # X^2 = y mod p ?
 # trouver x , p nombre premier et entier y , tel que X^2 = y mod p
 def verification(x, y, p):
@@ -15,8 +16,6 @@ def verification(x, y, p):
 
 
 print(verification(6, 10, 13))
-
-
 
 l = [0, 1, 2, 3, 4, 5]
 l_nb_premier = [7, 11, 13, 17, 19, 23]  # necessaire pour les blocs
@@ -84,7 +83,6 @@ def check_liste_bloc_n(l, n):
         return False
 
 
-
 def dix_tours(l):
     ll = l.copy()
     for i in range(0, 10):
@@ -116,6 +114,7 @@ def verification_preuve(liste, preuve, Max):
         if r[i] > Max[i]:
             vMax = False
     return vMax
+
 
 # creation aleatoire d une preuve de longueur n
 def build_preuve(n):
@@ -299,9 +298,10 @@ Max = [0, 0, 7]
 Livre = [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7]]
 print("Le livre :", Livre)
 print(verification_livre(Max))
-Livre = [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7],'Bob -77', [50,11,6,22,78,93]]
+Livre = [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7], 'Bob -77', [50, 11, 6, 22, 78, 93]]
 print("Le livre :", Livre)
 print(verification_livre(Max))
-Livre = [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7],'Bob -77', [50,11,6,22,78,93],'Camille -25',[38,2,30,15,18,81]]
+Livre = [[0, 0, 0, 0, 0, 0], 'Abel +35', [71, 15, 6, 8, 29, 7], 'Bob -77', [50, 11, 6, 22, 78, 93], 'Camille -25',
+         [38, 2, 30, 15, 18, 81]]
 print("Le livre :", Livre)
 print(verification_livre(Max))
